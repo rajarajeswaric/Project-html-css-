@@ -1,0 +1,168 @@
+
+
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0f7fa;
+    
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navbar */
+.navbar {
+    width: 86%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    position: relative;
+}
+
+.navbar .logo {
+    width: 160px;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+}
+
+.navbar ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: darkslategray;
+    transition: color 0.4s ease;
+}
+
+
+/* Info Section */
+.info {
+    text-align: center;
+    margin: 6% 0 0 0;
+}
+
+.info h1 {
+    font-size: 48px;
+    color: rgb(36, 32, 30);
+    margin: 10px 0;
+}
+
+.info h2 {
+    font-size: 18px;
+    color: rgb(36, 32, 30);
+    margin: 10px 0;
+}
+
+.info a {
+    text-decoration: none;
+    color: #fff;
+    background: rgb(36, 32, 30);
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: background 0.4s ease;
+}
+
+.info a:hover {
+    background: rgb(59, 174, 209);
+}
+
+/* Box Styles */
+.about-box, .skills-box, .project, .resume-box, .contact {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid rgb(36, 32, 30);
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-box h2, .skills-box h2, .project h2, .resume-box h2, .contact h2 {
+    font-size: 24px;
+    color: rgb(36, 32, 30);
+    margin-bottom: 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.skills-box .skill {
+    border: 1px solid rgb(36, 32, 30);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+/* Project Section */
+.project img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Resume Section */
+.resume-box p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.resume-link {
+    text-decoration: none;
+    color: #fff;
+    background: rgb(36, 32, 30);
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: background 0.4s ease;
+}
+
+.resume-link:hover {
+    background: rgb(59, 174, 209);
+}
+
+/* Contact Section */
+.contact p, .contact a {
+    font-size: 16px;
+    color: #555;
+    display: block;
+    margin: 10px 0;
+}
+
+.contact a {
+    text-decoration: none;
+    color: rgb(36, 32, 30);
+    transition: color 0.4s ease;
+}
+
+.contact a:hover {
+    color: rgb(59, 174, 209);
+}
